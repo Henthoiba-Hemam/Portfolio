@@ -1,0 +1,196 @@
+section{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap:100px;
+            margin-right: 7%;
+            margin-top:5%;
+        }
+        #port_image{
+            width:480px;
+            height:auto;
+        }
+        h1{
+             font-family:"Google Sans Code", monospace  ;
+             color:white; 
+             line-height: 1.2;
+             margin-bottom: 0.2rem;
+        }
+       #intro{
+            font-size: 1.2rem;
+            font-weight: 400;
+       } 
+            #name{
+            font-size: 2.5rem;
+       }
+
+       h2{  
+            display: inline;
+            font-family:"Google Sans Code", monospace  ;
+            color:white; 
+            line-height: 0.8;
+            
+            
+       }
+       #And{display: inline-block;
+           font-size: 1.6rem;
+            font-weight: 400;
+           
+       }
+       #frontent_dev{
+        display:inline-block;
+        color:rgb(170, 170, 255); 
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        border-right: 2px solid rgb(100, 100, 255);
+        animation: typing 2.5s steps(18, end) forwards, blink 1s step-end infinite;
+        margin-left:10px;
+         
+       }
+
+          @keyframes typing {
+          from { width: 0 }
+          to { width: 18ch } 
+       }
+
+         @keyframes blink {
+         50% { border-color: transparent }
+       }
+
+    #my_word{
+        color:white;
+        font-family: "Google Sans Code", monospace ;
+        font-size: 0.9rem;
+
+    }
+    #icon_sm{
+        width:300px;
+        position: relative;
+        
+    }
+    div ul{
+        display:flex;
+        gap:28px;
+        list-style: none;
+        position: absolute;
+        left:-40px;
+        
+    }
+    div ul li a img{
+        transition: transform 0.3s ease;
+    }
+
+    div ul li a img:hover{
+        transform: scale(1.3);
+    }
+
+    #facebook{
+        height:36px;
+    }
+    #whatapp{
+        height:35px;
+    }
+    #telegram{
+        height:35px;
+    }
+    #github{
+        height:35px;
+    }
+    #hire_me{
+        cursor: pointer;
+    }
+    #hire_me a{
+        display: inline-block;
+        padding: 12px 30px;
+        color:white;
+        position:relative;
+        top:100px;
+        text-decoration: none;
+        font-size:1.1rem;
+        background: #111;
+        border: 2px solid #0ff;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        z-index: 1;
+        overflow: hidden;
+        transition: color 0.3s ease;
+        box-shadow:  1px 1px 30px #0ff, -1px -1px 20px #0ff inset;
+
+    }
+    #hire_me a::before{
+        content:"";
+        position:absolute;
+        top:-50%;
+        left:-50%;
+        width:200%;
+        height:200%;
+        background: linear-gradient(135deg, #0ff, #00f,#f0f, #0ff);
+        background-size: 400%;
+        z-index: -1;
+        transition: opacity 0.3s ease;
+        opacity: 0.5;
+        animation: glow 4s linear infinite;
+        
+    }
+    #hire_me a:hover::before{
+        opacity:1;
+
+    }
+    #hire_me a:hover{
+        color:black;
+        box-shadow: 0 0 20px rgb(0, 255, 255), 0 0 40px rgb(0, 255, 255) inset;
+    }
+    @keyframes glow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    #hire_con{
+        display:flex; 
+        gap:14px;  
+    }
+    #contact{
+        position:relative;
+        top:100px;
+    
+    }
+    #contact a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding:12px 30px;
+        border:2px solid grey;
+        background:transparent;
+        border-radius:10px;
+        
+
+    }
+    #contact a:hover{
+        color:black;
+        background-color: rgb(230, 225, 225);
+        box-sizing: border-box;
+    }
+    .stats {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 10%;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 1rem;
+        flex-wrap: wrap; 
+}
+
+.stats strong {
+        font-size: 2rem;
+        color: cyan;
+}
+
+.divider {
+        color: gray;
+        font-weight: bold;
+    }
